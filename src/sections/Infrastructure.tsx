@@ -1,13 +1,14 @@
 import { Factory, Microscope } from 'lucide-react';
 import RevealImage from '../components/RevealImage';
+import { asset } from '../lib/asset';
 
 const facilityPhotos = [
   {
-    image: '/assets/visit-factory-floor.jpg',
+    image: asset('/assets/visit-factory-floor.jpg'),
     alt: 'Production floor at our manufacturing partner facility',
   },
   {
-    image: '/assets/visit-jidi-warehouse.jpg',
+    image: asset('/assets/visit-jidi-warehouse.jpg'),
     alt: 'Warehouse and dispatch area at our partner facility',
   },
 ];

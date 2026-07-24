@@ -4,6 +4,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react';
 import MagneticButton from './MagneticButton';
 import { navItems, contact } from '../data/content';
+import { asset } from '../lib/asset';
 
 function DesktopNavItem({ item }: { item: (typeof navItems)[number] }) {
   const [open, setOpen] = useState(false);
@@ -120,7 +121,7 @@ export default function Navbar() {
       >
         <nav className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-6">
           <Link to="/" className="shrink-0">
-            <img src="/assets/logo.png" alt="SA-Ethics" className="h-10 w-auto" />
+            <img src={asset('/assets/logo.png')} alt="SA-Ethics" className="h-10 w-auto" />
           </Link>
 
           <ul className="hidden lg:flex items-center gap-7">
@@ -155,7 +156,7 @@ export default function Navbar() {
             className="fixed inset-0 z-[60] bg-white flex flex-col"
           >
             <div className="flex items-center justify-between px-6 h-20 border-b border-border shrink-0">
-              <img src="/assets/logo.png" alt="SA-Ethics" className="h-10 w-auto" />
+              <img src={asset('/assets/logo.png')} alt="SA-Ethics" className="h-10 w-auto" />
               <button
                 type="button"
                 aria-label="Close menu"

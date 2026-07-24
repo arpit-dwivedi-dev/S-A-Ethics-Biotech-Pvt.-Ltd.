@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import RevealImage from '../components/RevealImage';
 import { factoryVisits } from '../data/content';
+import { asset } from '../lib/asset';
 
 export default function GlobalSourcing() {
   return (
@@ -17,7 +18,7 @@ export default function GlobalSourcing() {
 
         <RevealImage
           wrapperClassName="rounded-2xl w-full h-56 sm:h-80 mb-12"
-          src="/assets/gallery-collage.jpg"
+          src={asset("/assets/gallery-collage.jpg")}
           alt="Collage of SA-Ethics team visits to partner factories alongside a centrifuge under production"
           className="w-full h-full object-cover"
         />

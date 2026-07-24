@@ -5,6 +5,7 @@ import RevealImage from '../components/RevealImage';
 import Infrastructure from '../sections/Infrastructure';
 import GlobalSourcing from '../sections/GlobalSourcing';
 import { aboutContent, company } from '../data/content';
+import { asset } from '../lib/asset';
 
 const pillars = [
   { icon: HeartHandshake, title: 'Our Principle', body: company.principle },
@@ -28,7 +29,7 @@ export default function AboutUs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start mb-20">
             <RevealImage
               wrapperClassName="rounded-2xl w-full h-72 md:h-full"
-              src="/assets/aboutus.jpg"
+              src={asset("/assets/aboutus.jpg")}
               alt="SA-Ethics corporate meeting room"
               className="w-full h-full object-cover"
             />

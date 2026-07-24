@@ -2,6 +2,7 @@ import { motion, useReducedMotion } from 'motion/react';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
 import MagneticButton from '../components/MagneticButton';
 import { company, stats } from '../data/content';
+import { asset } from '../lib/asset';
 
 export default function Hero() {
   const shouldReduceMotion = useReducedMotion();
@@ -46,7 +47,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="absolute top-0 right-0 w-[78%] h-[82%] rounded-3xl overflow-hidden border border-border shadow-[0_20px_60px_-15px_rgba(14,23,64,0.25)]"
           >
-            <img src="/assets/hero-collage.jpg" alt="SA-Ethics blood bank equipment range" className="w-full h-full object-cover" />
+            <img src={asset("/assets/hero-collage.jpg")} alt="SA-Ethics blood bank equipment range" className="w-full h-full object-cover" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -54,7 +55,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="absolute bottom-0 left-0 w-[62%] h-[46%] rounded-3xl overflow-hidden border-4 border-bg-page shadow-[0_20px_60px_-15px_rgba(14,23,64,0.3)]"
           >
-            <img src="/assets/gallery-collage.jpg" alt="Our team on the ground with manufacturing partners" className="w-full h-full object-cover" />
+            <img src={asset("/assets/gallery-collage.jpg")} alt="Our team on the ground with manufacturing partners" className="w-full h-full object-cover" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}

@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset';
+
 export const company = {
   legalName: 'S A Ethics Biotech Pvt. Ltd.',
   parentEntity: 'SA-Ethics Bio & Consultancy Services LLP',
@@ -75,22 +77,22 @@ export type GovRegistration = {
 
 export const governmentRegistrations: GovRegistration[] = [
   {
-    image: '/assets/certs/dgft-iec.png',
+    image: asset('/assets/certs/dgft-iec.png'),
     title: 'Directorate General of Foreign Trade',
     detail: 'IEC No.: ADOFS6935K',
   },
   {
-    image: '/assets/certs/iso-13485-riclgeac.png',
+    image: asset('/assets/certs/iso-13485-riclgeac.png'),
     title: 'ISO 13485:2016 Certified',
     detail: 'PAC-GEAC-1506-299',
   },
   {
-    image: '/assets/certs/iso-9001-riclUAF.png',
+    image: asset('/assets/certs/iso-9001-riclUAF.png'),
     title: 'ISO 9001:2015 Certified',
     detail: 'Accreditation No. 51708260106 (QMS)',
   },
   {
-    image: '/assets/certs/drug-license.png',
+    image: asset('/assets/certs/drug-license.png'),
     title: 'Drug Control Department, Govt. of NCT of Delhi',
     detail: 'DL-KON-129349/50',
   },
@@ -102,9 +104,9 @@ export type ChannelPartner = {
 };
 
 export const channelPartners: ChannelPartner[] = [
-  { image: '/assets/certs/partner-tesonic.png', name: 'TeSonic' },
-  { image: '/assets/certs/partner-athenese.png', name: 'Athenese Dx' },
-  { image: '/assets/certs/partner-top-medical.png', name: 'TOP Medical' },
+  { image: asset('/assets/certs/partner-tesonic.png'), name: 'TeSonic' },
+  { image: asset('/assets/certs/partner-athenese.png'), name: 'Athenese Dx' },
+  { image: asset('/assets/certs/partner-top-medical.png'), name: 'TOP Medical' },
 ];
 
 export type CatalogProduct = {
@@ -113,33 +115,33 @@ export type CatalogProduct = {
 };
 
 export const bloodBankEquipment: CatalogProduct[] = [
-  { name: 'Alta Elisa Incu-Shaker ADX-130', image: '/assets/products/alta-elisa-incu-shaker-adx-130.jpg' },
-  { name: 'Alta Elisa Washer ADX-120', image: '/assets/products/alta-elisa-washer-adx-120.jpg' },
-  { name: 'Alta Elisa Reader ADX-110', image: '/assets/products/alta-elisa-reader-adx-110.jpg' },
-  { name: 'Cryo Freezer', image: '/assets/products/cryo-freezer.jpg' },
-  { name: 'Platelet Incubator With Agitator', image: '/assets/products/platelet-incubator-double.jpg' },
-  { name: 'Automatic Donor Couch', image: '/assets/products/automatic-donor-couch.jpg' },
-  { name: 'Plasma Thawing Bath', image: '/assets/products/plasma-thawing-bath.jpg' },
-  { name: 'Refrigerated Centrifuge Micro Controller', image: '/assets/products/refrigerated-centrifuge-1.jpg' },
-  { name: 'Refrigerated Centrifuge PLC Controller', image: '/assets/product-refrigerated-centrifuge.jpg' },
-  { name: 'Cryo Bath', image: '/assets/products/cryo-bath.jpg' },
-  { name: 'Laminar Air Flow Bench', image: '/assets/products/laminar-air-flow-bench.jpg' },
-  { name: 'Plasma Extractor', image: '/assets/products/plasma-expressor.jpg' },
-  { name: 'Double Pan Balance', image: '/assets/products/double-pan-balance.jpg' },
-  { name: 'Single Pan Balance', image: '/assets/products/single-pan-balance.jpg' },
-  { name: 'Central Monitoring System – Data Logger', image: '/assets/products/data-logger.jpg' },
-  { name: 'Plasma Freezer', image: '/assets/product-plasma-freezer.jpg' },
+  { name: 'Alta Elisa Incu-Shaker ADX-130', image: asset('/assets/products/alta-elisa-incu-shaker-adx-130.jpg') },
+  { name: 'Alta Elisa Washer ADX-120', image: asset('/assets/products/alta-elisa-washer-adx-120.jpg') },
+  { name: 'Alta Elisa Reader ADX-110', image: asset('/assets/products/alta-elisa-reader-adx-110.jpg') },
+  { name: 'Cryo Freezer', image: asset('/assets/products/cryo-freezer.jpg') },
+  { name: 'Platelet Incubator With Agitator', image: asset('/assets/products/platelet-incubator-double.jpg') },
+  { name: 'Automatic Donor Couch', image: asset('/assets/products/automatic-donor-couch.jpg') },
+  { name: 'Plasma Thawing Bath', image: asset('/assets/products/plasma-thawing-bath.jpg') },
+  { name: 'Refrigerated Centrifuge Micro Controller', image: asset('/assets/products/refrigerated-centrifuge-1.jpg') },
+  { name: 'Refrigerated Centrifuge PLC Controller', image: asset('/assets/product-refrigerated-centrifuge.jpg') },
+  { name: 'Cryo Bath', image: asset('/assets/products/cryo-bath.jpg') },
+  { name: 'Laminar Air Flow Bench', image: asset('/assets/products/laminar-air-flow-bench.jpg') },
+  { name: 'Plasma Extractor', image: asset('/assets/products/plasma-expressor.jpg') },
+  { name: 'Double Pan Balance', image: asset('/assets/products/double-pan-balance.jpg') },
+  { name: 'Single Pan Balance', image: asset('/assets/products/single-pan-balance.jpg') },
+  { name: 'Central Monitoring System – Data Logger', image: asset('/assets/products/data-logger.jpg') },
+  { name: 'Plasma Freezer', image: asset('/assets/product-plasma-freezer.jpg') },
 ];
 
 export const transportationBoxes: CatalogProduct[] = [
-  { name: 'Blood Transportation Box 8L', image: '/assets/products/8l.jpg' },
-  { name: 'Blood Transportation Box 15L', image: '/assets/products/15l.jpg' },
-  { name: 'Blood Transportation Box 50L', image: '/assets/products/50l.jpg' },
-  { name: 'Blood Transportation Box 75L', image: '/assets/products/75l.jpg' },
+  { name: 'Blood Transportation Box 8L', image: asset('/assets/products/8l.jpg') },
+  { name: 'Blood Transportation Box 15L', image: asset('/assets/products/15l.jpg') },
+  { name: 'Blood Transportation Box 50L', image: asset('/assets/products/50l.jpg') },
+  { name: 'Blood Transportation Box 75L', image: asset('/assets/products/75l.jpg') },
 ];
 
 export const donorChairs: CatalogProduct[] = [
-  { name: 'Portable Blood Donor Chair', image: '/assets/products/portable-blood-donor-chair.jpg' },
+  { name: 'Portable Blood Donor Chair', image: asset('/assets/products/portable-blood-donor-chair.jpg') },
 ];
 
 export type FeaturedProduct = {
@@ -149,14 +151,14 @@ export type FeaturedProduct = {
 };
 
 export const featuredProducts: FeaturedProduct[] = [
-  { name: 'Refrigerated Centrifuge PLC', image: '/assets/product-refrigerated-centrifuge.jpg', href: '/blood-bank-equipment' },
-  { name: 'Blood Collection Monitor', image: '/assets/product-blood-collection-monitor.jpg', href: '/blood-bank-equipment' },
-  { name: 'Cryo Freezer', image: '/assets/products/cryo-freezer.jpg', href: '/blood-bank-equipment' },
-  { name: 'Automatic Donor Couch', image: '/assets/products/automatic-donor-couch.jpg', href: '/blood-bank-equipment' },
-  { name: 'Blood Bank Refrigerator', image: '/assets/product-blood-bank-refrigerator.jpg', href: '/blood-bank-equipment' },
-  { name: 'Analytical Instruments', image: '/assets/products/double-pan-balance.jpg', href: '/blood-bank-equipment' },
-  { name: 'Blood Transportation Box', image: '/assets/product-portable-coolers.jpg', href: '/mobile-blood-transportation-box' },
-  { name: 'Portable Blood Donor Chair', image: '/assets/products/portable-blood-donor-chair.jpg', href: '/portable-blood-donor-chair' },
+  { name: 'Refrigerated Centrifuge PLC', image: asset('/assets/product-refrigerated-centrifuge.jpg'), href: '/blood-bank-equipment' },
+  { name: 'Blood Collection Monitor', image: asset('/assets/product-blood-collection-monitor.jpg'), href: '/blood-bank-equipment' },
+  { name: 'Cryo Freezer', image: asset('/assets/products/cryo-freezer.jpg'), href: '/blood-bank-equipment' },
+  { name: 'Automatic Donor Couch', image: asset('/assets/products/automatic-donor-couch.jpg'), href: '/blood-bank-equipment' },
+  { name: 'Blood Bank Refrigerator', image: asset('/assets/product-blood-bank-refrigerator.jpg'), href: '/blood-bank-equipment' },
+  { name: 'Analytical Instruments', image: asset('/assets/products/double-pan-balance.jpg'), href: '/blood-bank-equipment' },
+  { name: 'Blood Transportation Box', image: asset('/assets/product-portable-coolers.jpg'), href: '/mobile-blood-transportation-box' },
+  { name: 'Portable Blood Donor Chair', image: asset('/assets/products/portable-blood-donor-chair.jpg'), href: '/portable-blood-donor-chair' },
 ];
 
 export type Director = {
@@ -172,7 +174,7 @@ export const directors: Director[] = [
   {
     name: 'Sanjay K. Tripathi',
     title: 'Managing Director',
-    image: '/assets/directors/sanjay-tripathi.jpg',
+    image: asset('/assets/directors/sanjay-tripathi.jpg'),
     bio: [
       '“Nobody can do everything, but everybody can do something” — this is the motto of Rtn. Sanjay with Yagya Charitable Blood Bank, a venture of Yagya Sewa Sasthan. His agenda is to fulfill every blood request by making every eligible individual a voluntary blood donor.',
       'Rtn. Sanjay K. Tripathi, a dignitary in the field of Blood Banking, is associated with many social organizations and trusts, sits on the panel of various charitable blood banks, and is an Executive Proud Rotarian of Rotary Club of Kanpur West (the biggest NGO of the world, catering its services round the clock in the interest of humanity). He has been a forerunner as:',
@@ -189,13 +191,13 @@ export const directors: Director[] = [
   {
     name: 'Ankita Tripathi',
     title: 'Director',
-    image: '/assets/directors/ankita-tripathi.jpg',
+    image: asset('/assets/directors/ankita-tripathi.jpg'),
     bio: ['Ankita Tripathi is a public-spirited businesswoman. She firmly believes that “You do not need a reason to help people”.'],
   },
   {
     name: 'Aman Tripathi',
     title: 'Executive Director',
-    image: '/assets/directors/aman-tripathi.jpg',
+    image: asset('/assets/directors/aman-tripathi.jpg'),
     bio: [
       'Aman Tripathi is a heretic and charismatic youth who is pursuing his B.E. in Naval Architecture and Offshore Engineering, while simultaneously subserving his company by working towards its globalization.',
       '“The earlier you start, the more time you have to mess up” — is his belief and source of motivation in life.',
@@ -210,31 +212,31 @@ export type VisitPhoto = {
 
 export const factoryVisits: VisitPhoto[] = [
   {
-    image: '/assets/visit-foshan-alpicool-reception.jpg',
+    image: asset('/assets/visit-foshan-alpicool-reception.jpg'),
     caption: 'Visiting Foshan Alpicool Electric Appliance Co., Ltd.',
   },
   {
-    image: '/assets/visit-meeting-office-2.jpg',
+    image: asset('/assets/visit-meeting-office-2.jpg'),
     caption: 'Partnership review meeting',
   },
   {
-    image: '/assets/visit-meeting-office-1.jpg',
+    image: asset('/assets/visit-meeting-office-1.jpg'),
     caption: 'Partnership review meeting',
   },
   {
-    image: '/assets/visit-centrifuge-demo.jpg',
+    image: asset('/assets/visit-centrifuge-demo.jpg'),
     caption: 'Centrifuge quality demonstration with the production team',
   },
   {
-    image: '/assets/visit-jidi-office-meeting.jpg',
+    image: asset('/assets/visit-jidi-office-meeting.jpg'),
     caption: 'Sourcing discussion at JIDI Instruments',
   },
   {
-    image: '/assets/visit-jidi-warehouse.jpg',
+    image: asset('/assets/visit-jidi-warehouse.jpg'),
     caption: 'Manufacturing floor walkthrough — JIDI Instruments',
   },
   {
-    image: '/assets/visit-factory-floor.jpg',
+    image: asset('/assets/visit-factory-floor.jpg'),
     caption: 'On the production line',
   },
 ];
@@ -245,9 +247,9 @@ export type GalleryPhoto = {
 };
 
 export const conferenceGallery: GalleryPhoto[] = [
-  { image: '/assets/gallery/gallery-1.jpg', caption: 'Showcasing equipment at an international medical trade show' },
-  { image: '/assets/gallery/gallery-2.jpg', caption: '36th International Congress of the ISBT, Barcelona 2020' },
-  { image: '/assets/gallery/gallery-3.jpg', caption: 'With Thermo Scientific at a blood-processing technology expo' },
+  { image: asset('/assets/gallery/gallery-1.jpg'), caption: 'Showcasing equipment at an international medical trade show' },
+  { image: asset('/assets/gallery/gallery-2.jpg'), caption: '36th International Congress of the ISBT, Barcelona 2020' },
+  { image: asset('/assets/gallery/gallery-3.jpg'), caption: 'With Thermo Scientific at a blood-processing technology expo' },
 ];
 
 export type NavChild = { label: string; to: string };
