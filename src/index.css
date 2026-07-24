@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/fraunces-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/fraunces-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/fraunces-600-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/fraunces-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/inter-variable.woff2") format("woff2");
+}
+
+@theme {
+  --font-heading: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand colors sampled directly from the SA-Ethics logo */
+  --color-navy: #1B2A6B;
+  --color-navy-dark: #0E1740;
+  --color-crimson: #9E2B22;
+  --color-crimson-dark: #7A1F1A;
+  --color-gold: #F0B400;
+  --color-gold-deep: #B8860B;
+
+  --color-bg-page: #FBFAF6;
+  --color-bg-soft: #F3F0E8;
+  --color-bg-navy: #0E1740;
+
+  --color-text: #201F2B;
+  --color-text-muted: #615E6E;
+  --color-border: #E7E2D6;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-page text-text font-sans antialiased selection:bg-gold/30 selection:text-navy;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .section-label {
+    @apply text-crimson font-sans font-semibold text-xs tracking-[0.2em] uppercase mb-3 block;
+  }
+
+  .font-display-italic {
+    font-style: italic;
+  }
+
+  .card-surface {
+    @apply bg-white border border-border/80 rounded-2xl;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:border-navy/25 hover:-translate-y-1;
+  }
+
+  .btn-primary {
+    @apply px-7 py-3.5 bg-navy text-white font-sans font-semibold rounded-full hover:bg-navy-dark transition-colors;
+  }
+  .btn-secondary {
+    @apply px-7 py-3.5 bg-transparent text-navy font-sans font-semibold rounded-full border border-navy/25 hover:border-navy hover:bg-navy/5 transition-colors;
+  }
+  .btn-accent {
+    @apply px-7 py-3.5 bg-crimson text-white font-sans font-semibold rounded-full hover:bg-crimson-dark transition-colors;
+  }
+
+  /* Subtle organic grain to break up flat color fields — SVG feTurbulence, applied as a low-opacity overlay */
+  .bg-grain {
+    position: relative;
+    isolation: isolate;
+  }
+  .bg-grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.045;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .bg-grain > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Soft mesh-gradient blob field for section backdrops instead of flat color */
+  .bg-mesh-warm {
+    background-color: var(--color-bg-soft);
+    background-image:
+      radial-gradient(ellipse 60% 50% at 15% 20%, rgba(27, 42, 107, 0.10), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 85% 15%, rgba(240, 180, 0, 0.14), transparent 60%),
+      radial-gradient(ellipse 55% 45% at 75% 90%, rgba(158, 43, 34, 0.08), transparent 60%);
+  }
+  .bg-mesh-navy {
+    background-color: var(--color-navy-dark);
+    background-image:
+      radial-gradient(ellipse 60% 55% at 20% 10%, rgba(240, 180, 0, 0.12), transparent 60%),
+      radial-gradient(ellipse 55% 50% at 90% 30%, rgba(27, 42, 107, 0.6), transparent 65%),
+      radial-gradient(ellipse 60% 60% at 50% 100%, rgba(158, 43, 34, 0.18), transparent 60%);
+  }
+
+  .text-stat {
+    @apply font-heading font-medium tabular-nums;
+    font-feature-settings: "ss01" on;
+  }
+}
