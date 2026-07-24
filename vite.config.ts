@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/S-A-Ethics-Biotech-Pvt.-Ltd./',
+  base: '/',
   plugins: [react(), tailwindcss()],
 })

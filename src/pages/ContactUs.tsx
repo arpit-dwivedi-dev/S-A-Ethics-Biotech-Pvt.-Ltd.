@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Send, Phone, Mail } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import PageHeader from '../components/PageHeader';
+import Seo from '../components/Seo';
 import Locations from '../sections/Locations';
 import { contact } from '../data/content';
 
@@ -16,6 +17,24 @@ export default function ContactUs() {
 
   return (
     <>
+      <Seo
+        title="Contact Us | SA Ethics Biotech — Delhi & Kanpur, India"
+        description="Get in touch with SA Ethics Biotech for blood bank equipment enquiries. Offices in Delhi and Kanpur, India. Call, WhatsApp or email our team for a quote."
+        keywords="contact SA Ethics Biotech, blood bank equipment supplier contact, SA Ethics Biotech Delhi office, SA Ethics Biotech Kanpur office, blood bank equipment enquiry, blood bank equipment quote India"
+        path="/contact-us"
+        breadcrumbs={[{ name: 'Contact Us', path: '/contact-us' }]}
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'ContactPage',
+          name: 'Contact SA Ethics Biotech',
+          mainEntity: {
+            '@type': 'Organization',
+            name: 'SA Ethics Biotech Pvt. Ltd.',
+            email: contact.email,
+            telephone: contact.phones[0].number,
+          },
+        }}
+      />
       <PageHeader title="Contact Us" />
 
       <section className="py-24 bg-bg-page">

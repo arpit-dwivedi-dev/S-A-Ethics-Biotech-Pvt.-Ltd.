@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import PageHeader from '../components/PageHeader';
+import Seo from '../components/Seo';
 import { conferenceGallery, factoryVisits } from '../data/content';
 
 const allPhotos = [...conferenceGallery, ...factoryVisits];
@@ -22,6 +23,13 @@ export default function PhotoGallery() {
 
   return (
     <>
+      <Seo
+        title="Photo Gallery | SA Ethics Biotech — Events, Conferences & Factory Visits"
+        description="Browse photos from SA Ethics Biotech's international trade shows, ISBT conferences and factory visits with global blood bank equipment manufacturing partners."
+        keywords="SA Ethics Biotech gallery, ISBT conference, blood bank equipment trade show, blood bank exhibition photos, blood bank equipment factory visit"
+        path="/photo-gallery"
+        breadcrumbs={[{ name: 'Photo Gallery', path: '/photo-gallery' }]}
+      />
       <PageHeader title="Photo Gallery" />
 
       <section className="py-24 bg-bg-page">

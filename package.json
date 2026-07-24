@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://arpit-dwivedi-dev.github.io/S-A-Ethics-Biotech-Pvt.-Ltd./",
+  "homepage": "https://www.saethicsbio.com/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

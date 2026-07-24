@@ -2,11 +2,19 @@ import { motion } from 'motion/react';
 import { ExternalLink } from 'lucide-react';
 import PageHeader from '../components/PageHeader';
 import RevealImage from '../components/RevealImage';
+import Seo from '../components/Seo';
 import { directors } from '../data/content';
 
 export default function Directors() {
   return (
     <>
+      <Seo
+        title="Directors | SA Ethics Biotech Pvt. Ltd."
+        description="Meet the leadership of SA Ethics Biotech — Sanjay K. Tripathi, Ankita Tripathi and Aman Tripathi — driving blood bank equipment innovation and charitable blood banking initiatives across India."
+        keywords="SA Ethics Biotech directors, Sanjay Tripathi blood bank, blood bank equipment company leadership, Yagya Charitable Blood Bank, Rotary Blood Bank Kanpur, blood bank equipment management team"
+        path="/directors"
+        breadcrumbs={[{ name: 'Directors', path: '/directors' }]}
+      />
       <PageHeader title="Directors" parent="Profile" />
 
       <section className="py-24 bg-bg-page">

@@ -5,7 +5,7 @@
     <title>Redirecting...</title>
     <script>
       // https://github.com/rafgraph/spa-github-pages
-      var pathSegmentsToKeep = 1; // number of segments in the repo base path
+      var pathSegmentsToKeep = 0; // served from the custom domain root, no repo base path
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +

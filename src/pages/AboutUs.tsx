@@ -4,6 +4,7 @@ import PageHeader from '../components/PageHeader';
 import RevealImage from '../components/RevealImage';
 import Infrastructure from '../sections/Infrastructure';
 import GlobalSourcing from '../sections/GlobalSourcing';
+import Seo from '../components/Seo';
 import { aboutContent, company } from '../data/content';
 import { asset } from '../lib/asset';
 
@@ -22,6 +23,13 @@ const outlook = [
 export default function AboutUs() {
   return (
     <>
+      <Seo
+        title="About Us | ISO Certified Blood Bank Equipment Manufacturer — SA Ethics Biotech"
+        description="SA-Ethics Bio & Consultancy Services — a professional trader, manufacturer and establisher of 50+ modern blood banks across India, ISO 9001:2015 & 13485:2016 certified, with 20+ product lines and 3 facilities."
+        keywords="about SA Ethics Biotech, blood bank equipment company India, ISO certified medical device manufacturer, blood bank consultancy India, blood bank establishment company, medical device trader import export India"
+        path="/about-us"
+        breadcrumbs={[{ name: 'About Us', path: '/about-us' }]}
+      />
       <PageHeader title="About Us" />
 
       <section className="py-24 bg-bg-page">
